@@ -7,7 +7,6 @@
   width: 800px;
   height: 480px;
   margin: 60px auto 0 auto;
-  padding: 20px;
   color: white;
 }
 
@@ -23,8 +22,8 @@
 .clock{
   width: 800px;
   position: absolute;
-  top:170px;
-  left: 30px;
+  top:160px;
+  left: 0px;
   text-align: center;
 }
 
@@ -38,7 +37,7 @@ h1.time{
 }
 
 h2.date{
-  color:#607D8B;  
+  color:#607D8B;
   font-size: 16px;
   font-family: 'Orbitron', sans-serif;
   padding:0;
