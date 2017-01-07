@@ -1,3 +1,3 @@
 ## Smartarse
 
-This adds just a little more smartarse in your life.
+This adds just a little more smartarse to your life.
