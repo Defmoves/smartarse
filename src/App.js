@@ -43,7 +43,6 @@ class App extends Component {
       <div className="App">
         <div className="smartarse">
           <h3 className="weather"><TiWeatherShower /></h3>
-          <img src={logo} className="logo" alt="logo" />
           <div className='clock'>
             <h1 className="time">{time}</h1>
             <h2 className="date">{date}</h2>
@@ -53,9 +52,6 @@ class App extends Component {
             <h4 className="india"><MdWbSunny/> India <Moment fromNow>2017-09-01</Moment></h4>
           </div>
         </div>
-        <p className="App-intro">
-          Because one smartarse just ain't enough
-        </p>
       </div>
     );
   }
