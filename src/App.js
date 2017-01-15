@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 var dateFormat = require('dateformat');
-import Moment from 'react-moment';
+import Moment from 'react-moment'
+import Weather from './Weather'
 
 var TiWeatherShower = require('react-icons/lib/ti/weather-shower');
 var MdTerrain = require('react-icons/lib/md/terrain');
@@ -14,6 +15,7 @@ class App extends Component {
   constructor(props){
           super(props);
           this.ticker = this.ticker.bind(this)
+          this.state = {style : 'day'}
     }
 
   componentWillMount(){
@@ -21,14 +23,23 @@ class App extends Component {
   }
 
   ticker(){
-    var self = this
-    var date = new Date()
-    var time = dateFormat(date, "hh:MM");
-    var date = dateFormat(date, "dddd, mmmm dS, yyyy");
+    let self = this
+    let date = new Date()
+    let time = dateFormat(date, "HH:MM");
+    let timeNumeric = dateFormat(date, "HHMM");
+    let day = dateFormat(date, "dddd, mmmm dS, yyyy");
+    let style = 'day'
+
+    if (timeNumeric > 700 && timeNumeric < 2100 ){
+      style = 'day'
+    } else if(timeNumeric >= 1355) {
+      style = 'night'
+    }
 
     this.setState({
       time : time,
-      date : date
+      day : day,
+      style: style
     })
 
     setTimeout(() => {
@@ -37,15 +48,13 @@ class App extends Component {
   }
 
   render() {
-    var time = (this.state !== null ? this.state.time : 0 )
-    var date = (this.state !== null ? this.state.date : 0 )
     return (
       <div className="App">
-        <div className="smartarse">
-          <h3 className="weather"><TiWeatherShower /></h3>
+        <div className={'smartarse ' + this.state.style}>
+          <Weather />
           <div className='clock'>
-            <h1 className="time">{time}</h1>
-            <h2 className="date">{date}</h2>
+            <h1 className="time">{this.state.time}</h1>
+            <h2 className="day">{this.state.day}</h2>
           </div>
           <div className='calendar'>
             <h4 className="ski"><MdTerrain /> Ski <Moment fromNow>2017-03-01</Moment></h4>

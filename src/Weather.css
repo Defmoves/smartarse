@@ -1,0 +1,19 @@
+.Weather{
+  color:#607D8B;
+  position: absolute;
+  font-size: 50px;
+  line-height: 0px;
+  top:20px;
+  right: 20px;
+  margin: 0 auto 0 auto;
+}
+
+.forecast{
+  float: left;
+  padding-left: 20px;
+  text-align: center;
+}
+
+.forecast p{
+  font-size: 16px;
+}

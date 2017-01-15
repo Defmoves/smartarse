@@ -8,12 +8,20 @@ html,body{
 
 .smartarse {
   position: relative;
-  background-color: #00796B;
   width: 800px;
   height: 480px;
   margin: 0 auto 0 auto;
   color: white;
 }
+
+  .smartarse.day{
+    background-color: #000;
+  }
+
+  .smartarse.night{
+    background-color: #000;
+    opacity: .4;
+  }
 
 .logo {
   position: absolute;
@@ -25,7 +33,6 @@ html,body{
 }
 
 .clock{
-  background-color: #009688;
   width: 800px;
   position: absolute;
   top:120px;
@@ -33,6 +40,14 @@ html,body{
   padding: 50px 0 30px 0;
   text-align: center;
 }
+
+  .smartarse.day .clock{
+    background-color: #3F51B5;
+  }
+
+  .smartarse.night .clock{
+    background-color: #9E2525;
+  }
 
 h1.time{
   font-size: 120px;
@@ -42,14 +57,29 @@ h1.time{
   padding:0;
 }
 
-h2.date{
-  color: #FFC107;
+  .smartarse.day h1.time{
+    color: #fff;
+  }
+
+  .smartarse.night h1.time{
+    color: #FF5722;
+  }
+
+h2.day{
   font-size: 16px;
-font-family: 'Press Start 2P', cursive;
+  font-family: 'Press Start 2P', cursive;
   padding:0;
   position: relative;
   top:-0px;
 }
+
+  .smartarse.day h2.day{
+    color: #FFC107;
+  }
+
+  .smartarse.night h2.day{
+    color: #FF5722;
+  }
 
 .calendar{
   color:#00BCD4;
@@ -63,32 +93,21 @@ font-family: 'Press Start 2P', cursive;
 h4.ski{
   color: #fff;
   font-size: 14px;
-font-family: 'Press Start 2P', cursive;
+  font-family: 'Press Start 2P', cursive;
   margin: 0 auto 5px auto;
 }
 
 h4.india{
   color: #fff;
   font-size: 14px;
-font-family: 'Press Start 2P', cursive;
+  font-family: 'Press Start 2P', cursive;
   margin: 0 auto 0 auto;
 }
 
-h3.weather{
-  color:#607D8B;
-  position: absolute;
-  font-size: 50px;
-  top:10px;
-  right: 20px;
-  margin: 0 auto 0 auto;
+.smartarse.day h4{
+  color: #FFC107;
 }
 
-.App-intro {
-  text-align: center;
-  font-size: small;
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.smartarse.night h4{
+  color: #FF5722;
 }
