@@ -24,6 +24,29 @@ class App extends Component {
     }
   }
 
+  componentWillMount(){
+    this.getWeather()
+  }
+
+  getWeather(){
+    let self = this
+
+    weather.getWeatherForecastForDays(5, function(err, obj){
+      self.setState({
+        day0: self.createForecast(obj.list[0]),
+        day1: self.createForecast(obj.list[1]),
+        day2: self.createForecast(obj.list[2]),
+        day3: self.createForecast(obj.list[3]),
+        day4: self.createForecast(obj.list[4]),
+
+      })
+    })
+
+    setTimeout(() => {
+      self.getWeather()
+    },3600000) // Once an Hour
+  }
+
   createForecast(obj){
     var icon = {}
 
@@ -52,21 +75,6 @@ class App extends Component {
             {icon}
             <p>{Math.floor(obj.temp.max)} &#x2103;</p>
           </div>
-  }
-
-  componentWillMount(){
-    let that = this
-
-    weather.getWeatherForecastForDays(5, function(err, obj){
-      that.setState({
-        day0: that.createForecast(obj.list[0]),
-        day1: that.createForecast(obj.list[1]),
-        day2: that.createForecast(obj.list[2]),
-        day3: that.createForecast(obj.list[3]),
-        day4: that.createForecast(obj.list[4]),
-
-      })
-    })
   }
 
   render() {
