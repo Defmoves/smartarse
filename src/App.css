@@ -1,12 +1,13 @@
 html,body{
   overflow:hidden;
-  background-color: #222;
+  background-color: #ff;
 }
 
 .app{
 }
 
 .smartarse {
+  background-color: #000;
   position: relative;
   width: 800px;
   height: 480px;
@@ -14,12 +15,7 @@ html,body{
   color: white;
 }
 
-  .smartarse.day{
-    background-color: #000;
-  }
-
   .smartarse.night{
-    background-color: #000;
     opacity: .4;
   }
 
@@ -33,7 +29,11 @@ html,body{
 }
 
 .clock{
+  background-color: #3F51B5;
+  border-top: 20px solid #303F9F;
+  border-bottom: 20px solid #303F9F;
   width: 800px;
+  height: 140px;
   position: absolute;
   top:120px;
   left: 0px;
@@ -41,41 +41,32 @@ html,body{
   text-align: center;
 }
 
-  .smartarse.day .clock{
-    background-color: #3F51B5;
-  }
-
   .smartarse.night .clock{
     background-color: #9E2525;
   }
 
 h1.time{
+  color: #f2f2f2;
   font-size: 120px;
+  line-height: 100px;
   font-family: 'Press Start 2P', cursive;
   font-weight: 400;
   margin: 0 auto 0 auto;
   padding:0;
 }
 
-  .smartarse.day h1.time{
-    color: #fff;
-  }
-
   .smartarse.night h1.time{
     color: #FF5722;
   }
 
 h2.day{
+  color: #448AFF;
   font-size: 16px;
   font-family: 'Press Start 2P', cursive;
   padding:0;
   position: relative;
   top:-0px;
 }
-
-  .smartarse.day h2.day{
-    color: #FFC107;
-  }
 
   .smartarse.night h2.day{
     color: #FF5722;
@@ -90,22 +81,24 @@ h2.day{
   text-align: center;
 }
 
+h4 svg{
+  font-size: 30px;
+}
+
 h4.ski{
-  color: #fff;
-  font-size: 14px;
+  color: #607D8B;
+  font-size: 12px;
   font-family: 'Press Start 2P', cursive;
-  margin: 0 auto 5px auto;
+  float:left;
 }
 
 h4.india{
-  color: #fff;
-  font-size: 14px;
+  color: #607D8B;
+  font-size: 12px;
   font-family: 'Press Start 2P', cursive;
-  margin: 0 auto 0 auto;
-}
-
-.smartarse.day h4{
-  color: #FFC107;
+  float:right;
+  position: relative;
+  right: 40px;
 }
 
 .smartarse.night h4{
