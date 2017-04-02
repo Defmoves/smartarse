@@ -50,8 +50,6 @@ class App extends Component {
   createForecast(obj){
     var icon = {}
 
-    console.log(obj)
-
     switch(obj.weather[0].main){
       case 'Thunderstorm':
         icon = <TiWeatherStormy/>

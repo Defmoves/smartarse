@@ -15,19 +15,6 @@ html,body{
   color: white;
 }
 
-  .smartarse.night{
-    opacity: .4;
-  }
-
-.logo {
-  position: absolute;
-  top:15px;
-  left:5px;
-  float: left;
-  animation: App-logo-spin infinite 20s linear;
-  height: 60px;
-}
-
 .clock{
   background-color: #3F51B5;
   border-top: 20px solid #303F9F;
@@ -43,6 +30,8 @@ html,body{
 
   .smartarse.night .clock{
     background-color: #9E2525;
+    border-top: 20px solid #FF5722;
+    border-bottom: 20px solid #FF5722;
   }
 
 h1.time{
@@ -102,5 +91,5 @@ h4.india{
 }
 
 .smartarse.night h4{
-  color: #FF5722;
+  color: #9E2525;
 }

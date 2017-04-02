@@ -8,6 +8,11 @@
   margin: 0 auto 0 auto;
 }
 
+
+.smartarse.night .Weather{
+  color:#9E2525;
+}
+
 .forecast{
   float: left;
   padding-left: 20px;
