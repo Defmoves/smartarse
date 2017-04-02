@@ -17,12 +17,12 @@ html,body{
 
 .clock{
   background-color: #3F51B5;
-  border-top: 20px solid #303F9F;
-  border-bottom: 20px solid #303F9F;
+  border-top: 3px solid #303F9F;
+  border-bottom: 3px solid #303F9F;
   width: 800px;
   height: 140px;
   position: absolute;
-  top:120px;
+  top:135px;
   left: 0px;
   padding: 50px 0 30px 0;
   text-align: center;
@@ -30,8 +30,8 @@ html,body{
 
   .smartarse.night .clock{
     background-color: #9E2525;
-    border-top: 20px solid #FF5722;
-    border-bottom: 20px solid #FF5722;
+    border-top: 3px solid #FF5722;
+    border-bottom: 3px solid #FF5722;
   }
 
 h1.time{
