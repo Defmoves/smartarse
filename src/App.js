@@ -27,13 +27,13 @@ class App extends Component {
     let date = new moment.tz("Europe/London")
     let time = dateFormat(date, "HH:MM");
     let timeNumeric = dateFormat(date, "HHMM");
-    let day = dateFormat(date, "dddd, mmmm dS, yyyy");
+    let day = dateFormat(date, "dddd, dS mmmm");
     let style = 'day'
 
     if (timeNumeric > 700 && timeNumeric < 2200 ){
       style = 'day'
     } else {
-      style = 'day'
+      style = 'night'
     }
 
     this.setState({
