@@ -33,7 +33,7 @@ class App extends Component {
     if (timeNumeric > 700 && timeNumeric < 2200 ){
       style = 'day'
     } else {
-      style = 'night'
+      style = 'day'
     }
 
     this.setState({
@@ -57,8 +57,8 @@ class App extends Component {
             <h2 className="day">{this.state.day}</h2>
           </div>
           <div className='calendar'>
-            <h4 className="ski"><MdTerrain /> Madeira <Moment fromNow>2017-06-28</Moment></h4>
-            <h4 className="india"><MdWbSunny/> India <Moment fromNow>2017-09-08</Moment></h4>
+            <h4 className="reminder-left"><MdTerrain /> Madeira <Moment fromNow>2017-06-28</Moment></h4>
+            <h4 className="reminder-right"><MdWbSunny/> Vietnam <Moment fromNow>2017-09-08</Moment></h4>
           </div>
         </div>
       </div>

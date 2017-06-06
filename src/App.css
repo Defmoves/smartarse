@@ -1,7 +1,7 @@
 html,body{
   overflow:hidden;
   background-color: #ff;
-  font-family: 'Press Start 2P', cursive;
+  font-family: 'Amatic SC', cursive;
 }
 
 .app{
@@ -31,9 +31,9 @@ html,body{
 
 h1.time{
   color:#00BBD3;
-  font-size: 120px;
+  font-size: 150px;
   line-height: 100px;
-  font-family: 'Press Start 2P', cursive;
+  font-family: 'Vibur', cursive;
   font-weight: 400;
   margin: 0 auto 0 auto;
   padding:0;
@@ -45,11 +45,11 @@ h1.time{
 
 h2.day{
   color:#0096A6;
-  font-size: 16px;
-  font-family: 'Press Start 2P', cursive;
+  font-size: 26px;
+  font-family: 'Kaushan Script', cursive;
   padding:0;
   position: relative;
-  top:-0px;
+  top:-20px;
 }
 
   .smartarse.night h2.day{
@@ -62,27 +62,30 @@ h2.day{
   position: absolute;
   bottom:10px;
   left: 15px;
-  text-align: center;
 }
 
 h4 svg{
   font-size: 30px;
 }
 
-h4.ski{
+h4.reminder-left{
+  display: inline-block;
   color: #0096A6;
-  font-size: 12px;
-  font-family: 'Press Start 2P', cursive;
-  float:left;
+  font-size: 26px;
+  font-family: 'Kaushan Script', cursive;
+  position: relative;
+  left: 0px;
+  bottom: -30px;
 }
 
-h4.india{
+h4.reminder-right{
+  display: inline-block;
   color: #0096A6;
-  font-size: 12px;
-  font-family: 'Press Start 2P', cursive;
-  float:right;
+  font-size: 26px;
+  font-family: 'Kaushan Script', cursive;
   position: relative;
-  right: 40px;
+  right: -270px;
+  bottom: -30px;
 }
 
 .smartarse.night h4{
