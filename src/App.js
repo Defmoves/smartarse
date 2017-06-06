@@ -30,7 +30,7 @@ class App extends Component {
     let day = dateFormat(date, "dddd, mmmm dS, yyyy");
     let style = 'day'
 
-    if (timeNumeric > 700 && timeNumeric < 2100 ){
+    if (timeNumeric > 700 && timeNumeric < 2200 ){
       style = 'day'
     } else {
       style = 'night'
@@ -57,8 +57,8 @@ class App extends Component {
             <h2 className="day">{this.state.day}</h2>
           </div>
           <div className='calendar'>
-            <h4 className="ski"><MdTerrain /> Madeira <Moment fromNow>2017-07-26</Moment></h4>
-            <h4 className="india"><MdWbSunny/> India <Moment fromNow>2017-09-01</Moment></h4>
+            <h4 className="ski"><MdTerrain /> Madeira <Moment fromNow>2017-06-28</Moment></h4>
+            <h4 className="india"><MdWbSunny/> India <Moment fromNow>2017-09-08</Moment></h4>
           </div>
         </div>
       </div>

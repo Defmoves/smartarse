@@ -85,11 +85,11 @@ class App extends Component {
         break
     }
 
-    return <div className={today +  ' forecast'}>
-            <p className='day'>{day}</p>
-            <span className={iconClass}>{icon}</span>
-            <p>{Math.floor(obj.temp.max)} &#x2103;</p>
-          </div>
+    return (<div className={today +  ' forecast'}>
+              <p className='day'>{day}</p>
+              <div className={'icon ' + iconClass}>{icon}</div>
+              <p className='temp'>{Math.floor(obj.temp.max)} &#x2103;</p>
+            </div>)
   }
 
   render() {

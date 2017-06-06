@@ -1,6 +1,6 @@
 .Weather{
   width: 100%;
-  color:#607D8B;
+  color:#0096A6;
   position: absolute;
   font-size: 40px;
   line-height: 0px;
@@ -16,8 +16,9 @@
 
 .forecast{
   float: left;
-  padding: 0 20px 0 20px;
+  width: 60px;
   text-align: center;
+  padding: 10px 10px 0 10px;
 }
 
 .forecast.today{
@@ -25,22 +26,33 @@
   padding-right: 330px;
 }
 
-p.day{
-  font-size: 16px;
-  margin: 5px 0 10px 0;
-  font-weight: 900;
-}
-
 p{
-  font-size: 14px;
-  margin: 10px 0 0 0;
+  margin: 0;
+}
+
+p.day{
+  font-size: 12px;
+  font-weight: 900;
+  float:left;
+  clear: both;
+}
+
+.icon{
+  font-size: 45px;
+  padding: 10px 0 10px 0;
+}
+
+  .icon.sunny{
+    color: #FABF2C
+  }
+
+  icon.cloudy{
+    color: #212121
+  }
+
+
+p.temp{
+  font-size: 12px;
+  font-weight: 900;
   padding: 0;
-}
-
-.sunny{
-  color: #FABF2C
-}
-
-.cloudy{
-  color: #212121
 }
