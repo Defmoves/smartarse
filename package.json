@@ -3,18 +3,18 @@
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
-    "react-scripts": "0.8.4"
+    "react-scripts": "1.0.17"
   },
   "dependencies": {
-    "dateformat": "^2.0.0",
-    "moment": "^2.8.3",
-    "moment-timezone": "^0.5.11",
-    "openweather-apis": "^3.0.2",
-    "react": "^15.4.2",
-    "react-dom": "^15.4.2",
-    "react-fontawesome": "^1.5.0",
-    "react-icons": "^2.2.3",
-    "react-moment": "^0.1.2"
+    "dateformat": "^3.0.2",
+    "moment": "^2.19.1",
+    "moment-timezone": "^0.5.14",
+    "openweather-apis": "^3.3.5",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "react-fontawesome": "^1.6.1",
+    "react-icons": "^2.2.7",
+    "react-moment": "^0.6.5"
   },
   "scripts": {
     "start": "react-scripts start",

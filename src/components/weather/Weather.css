@@ -1,0 +1,47 @@
+.Weather{
+  width: 100%;
+  color:#8379f4;
+  position: absolute;
+  font-size: 40px;
+  line-height: 0px;
+  top:00px;
+  left: 00px;
+  margin: 0 auto 0 auto;
+}
+
+
+.smartarse.night .Weather{
+  color:#8379f4;
+}
+
+.forecast{
+  float: left;
+  width: 80px;
+  text-align: center;
+  padding: 10px 20px 0 20px;
+}
+
+  .forecast.today{
+    float: left;
+    padding-right: 90px;
+  }
+
+  .forecast p{
+    margin: 0;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 12px;
+    font-weight: 900;
+  }
+
+  .forecast .icon{
+    font-size: 45px;
+    padding: 5px 0 15px 0;
+  }
+
+  .forecast.Clear{
+    color: #FE9700;
+  }
+
+  .forecast.Snow{
+    color: #fff;
+  }

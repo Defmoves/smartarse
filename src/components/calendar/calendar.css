@@ -1,0 +1,26 @@
+.calendar{
+  height: 20px;
+  color:#8379f4;
+  width: 100%;
+  font-family: 'Orbitron', sans-serif;
+  position: absolute;
+  bottom: 30px;
+}
+
+.calendar svg{
+  font-size: 26px;
+}
+
+.calendar-left{
+  width: 397px;
+  font-size: 18px;
+  text-align: center;
+  float:left;
+}
+
+.calendar-right{
+  width: 397px;
+  font-size: 18px;
+  text-align: center;
+  float:right;
+}

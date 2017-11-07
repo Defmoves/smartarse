@@ -2,14 +2,16 @@ import React, { Component } from 'react'
 import weather from 'openweather-apis'
 import moment from "moment"
 import tz from "moment-timezone"
+import './Weather.css';
+
 var dateFormat = require('dateformat')
 var TiWeatherStormy = require('react-icons/lib/ti/weather-stormy')
 var TiWeatherShower = require('react-icons/lib/ti/weather-shower')
 var TiWeatherSnow = require('react-icons/lib/ti/weather-snow')
 var TiWeatherSunny = require('react-icons/lib/ti/weather-sunny')
 var TiWeatherCloudy = require('react-icons/lib/ti/weather-cloudy')
+var TiWeatherDownpour = require('react-icons/lib/ti/weather-downpour')
 
-import './Weather.css';
 
 class App extends Component {
 
@@ -67,28 +69,33 @@ class App extends Component {
     switch(obj.weather[0].main){
       case 'Thunderstorm':
         icon = <TiWeatherStormy/>
+        iconClass  = 'Thunderstorm'
         break
       case 'Rain':
+        icon = <TiWeatherDownpour/>
+        iconClass  = 'Rain'
+        break
       case 'Drizzle':
         icon = <TiWeatherShower/>
+        iconClass  = 'Drizzle'
         break
       case 'Snow':
         icon = <TiWeatherSnow/>
+        iconClass  = 'Snow'
         break
       case 'Clear':
         icon = <TiWeatherSunny/>
-        iconClass  = 'sunny'
+        iconClass  = 'Clear'
         break
       case 'Clouds':
         icon = <TiWeatherCloudy/>
-        iconClass  = 'cloudy'
+        iconClass  = 'Clouds'
         break
     }
 
-    return (<div className={today +  ' forecast'}>
-              <p className='day'>{day}</p>
-              <div className={'icon ' + iconClass}>{icon}</div>
-              <p className='temp'>{Math.floor(obj.temp.max)} &#x2103;</p>
+    return (<div className={'forecast ' + today +  ' '  + iconClass}>
+              <div className={'icon '}>{icon}</div>
+              <p className='temp'>{day} - {Math.floor(obj.temp.max)} &#x2103;</p>
             </div>)
   }
 
