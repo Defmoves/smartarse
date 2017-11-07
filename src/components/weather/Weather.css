@@ -1,6 +1,8 @@
 .Weather{
   width: 100%;
   color:#8379f4;
+  background-color: #383f4f;
+  font-weight: 900;
   position: absolute;
   font-size: 40px;
   line-height: 0px;
@@ -17,23 +19,23 @@
 .forecast{
   float: left;
   width: 80px;
-  text-align: center;
-  padding: 10px 20px 0 20px;
+  padding: 10px 26px 0;
 }
 
-  .forecast.today{
-    float: left;
-    padding-right: 90px;
+  .forecast p{
+    float:left;
+    margin: 0;
+    font-size: 12px;
+    margin: 23px 0 0 1px;
+    text-align: left;
   }
 
-  .forecast p{
-    margin: 0;
-    font-family: 'Orbitron', sans-serif;
-    font-size: 12px;
-    font-weight: 900;
+  .forecast p.temp{
+    margin: 15px 0 0 1px;
   }
 
   .forecast .icon{
+    float:left;
     font-size: 45px;
     padding: 5px 0 15px 0;
   }

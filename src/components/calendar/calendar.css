@@ -1,10 +1,12 @@
 .calendar{
-  height: 20px;
-  color:#8379f4;
+  height: 40px;
+  padding: 20px 0 10px 0;
+  color:#5bdaa5;
+  background-color: #383f4f;
+  font-weight: 700;
   width: 100%;
-  font-family: 'Orbitron', sans-serif;
   position: absolute;
-  bottom: 30px;
+  bottom: 0px;
 }
 
 .calendar svg{

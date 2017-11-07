@@ -11,6 +11,7 @@
     "moment-timezone": "^0.5.14",
     "openweather-apis": "^3.3.5",
     "react": "^16.0.0",
+    "react-background-noise": "0.0.7",
     "react-dom": "^16.0.0",
     "react-fontawesome": "^1.6.1",
     "react-icons": "^2.2.7",
