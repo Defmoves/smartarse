@@ -1,7 +1,7 @@
 .Weather{
   width: 100%;
-  color:#8379f4;
-  background-color: #383f4f;
+  color:red;
+  background-color: #0f0f0f;
   font-weight: 900;
   position: absolute;
   font-size: 40px;
@@ -18,6 +18,8 @@
 
 .forecast{
   float: left;
+  color:;
+  color:#858585;
   width: 80px;
   padding: 10px 26px 0;
 }
