@@ -54,7 +54,6 @@ class App extends Component {
           <Weather />
           <div className='clock'>
             <h1 className="time">{this.state.time}</h1>
-            <h2 className="day">{this.state.day}</h2>
           </div>
           <Calendar />
         </div>

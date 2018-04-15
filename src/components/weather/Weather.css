@@ -1,12 +1,11 @@
 .Weather{
   width: 100%;
   color:red;
-  background-color: #0f0f0f;
   font-weight: 900;
   position: absolute;
   font-size: 40px;
   line-height: 0px;
-  top:00px;
+  bottom:00px;
   left: 00px;
   margin: 0 auto 0 auto;
 }

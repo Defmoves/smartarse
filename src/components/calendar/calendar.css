@@ -1,28 +1,30 @@
 .calendar{
   height: 40px;
-  padding: 20px 0 10px 0;
-  color:#F57C00;
-  background-color: #0f0f0f;
+  padding: 10px 0 0px 0;
+  color:#00c0ff;
   font-weight: 700;
   width: 100%;
   position: absolute;
-  bottom: 0px;
+  bottom: 90px;
 }
 
 .calendar svg{
   font-size: 26px;
+  text-shadow: 0px 0px 16px #00c0ff;  
 }
 
 .calendar-left{
   width: 397px;
-  font-size: 18px;
+  font-size: 16px;
   text-align: center;
+  text-shadow: 0px 0px 16px #00c0ff;  
   float:left;
 }
 
 .calendar-right{
   width: 397px;
-  font-size: 18px;
+  font-size: 16px;
   text-align: center;
+  text-shadow: 0px 0px 16px #00c0ff;  
   float:right;
 }
