@@ -6,6 +6,7 @@ import "./calendar.css"
 
 var dateFormat = require("dateformat")
 var Question = require("react-icons/lib/fa/plane")
+var Heart = require("react-icons/lib/fa/heart")
 var Chain = require("react-icons/lib/fa/chain")
 
 class App extends Component {
@@ -16,7 +17,7 @@ class App extends Component {
           <Question /> Sardinia <Moment fromNow>2018-09-05</Moment>
         </div>
         <div className="calendar-left">
-          <Question /> Madrid <Moment fromNow>2018-09-12</Moment>
+          <Heart /> Stinky <Moment fromNow>2018-09-12</Moment>
         </div>
       </div>
     )
