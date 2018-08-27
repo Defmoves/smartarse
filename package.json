@@ -1,4 +1,4 @@
-{
+w{
   "name": "smartarse",
   "version": "0.1.0",
   "private": true,
@@ -6,16 +6,16 @@
     "react-scripts": "1.0.17"
   },
   "dependencies": {
-    "dateformat": "^3.0.2",
-    "moment": "^2.19.1",
-    "moment-timezone": "^0.5.14",
+    "dateformat": "^3.0.3",
+    "moment": "^2.22.2",
+    "moment-timezone": "^0.5.21",
     "openweather-apis": "^3.3.5",
-    "react": "^16.0.0",
+    "react": "^16.4.2",
     "react-background-noise": "0.0.7",
-    "react-dom": "^16.0.0",
+    "react-dom": "^16.4.2",
     "react-fontawesome": "^1.6.1",
     "react-icons": "^2.2.7",
-    "react-moment": "^0.6.5"
+    "react-moment": "^0.6.9"
   },
   "scripts": {
     "start": "react-scripts start",

@@ -29,13 +29,13 @@ html,body{
 }
 
 h1.time{
-  color:#ff3600;
+  color:#0097A7;
   font-size: 240px;
   font-weight: 700;
   line-height: 100px;
   margin: 0 auto 0 auto;
   padding:0;
-  text-shadow: 0px 0px 16px #ff3600;
+  text-shadow: 0px 0px 10px #009688;
 }
 
   .smartarse.night h1.time{
