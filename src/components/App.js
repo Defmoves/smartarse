@@ -1,13 +1,9 @@
 import React, { Component } from "react"
 import moment from "moment"
-import tz from "moment-timezone"
 import Weather from "./weather/"
 import Calendar from "./calendar/"
 import "./App.css"
-
-import { FaSun } from "react-icons/fa"
-
-var dateFormat = require("dateformat")
+import dateFormat from "dateformat"
 
 class App extends Component {
   constructor(props) {
