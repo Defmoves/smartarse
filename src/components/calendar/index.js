@@ -11,7 +11,7 @@ class App extends Component {
         <div className="calendar-left">
           <FaUtensils /> B in Bologna <Moment fromNow>2018-11-02</Moment>
         </div>
-        <div className="calendar-left">
+        <div className="calendar-right">
           <FaGift /> J's Birthday <Moment fromNow>2018-11-23</Moment>
         </div>
       </div>
