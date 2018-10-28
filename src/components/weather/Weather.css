@@ -41,10 +41,28 @@
     padding: 5px 0 15px 0;
   }
 
+  .forecast.Thunderstorm{
+    color: rgb(255, 255, 255);
+  }
+  
+  .forecast.Rain{
+    color: rgb(43, 95, 155);
+  }
+  
+  .forecast.Drizzle{
+    color: rgb(88, 114, 143);
+  }
+  
+  .forecast.Snow{
+    color: #fff;
+  }
+
   .forecast.Clear{
     color: #FE9700;
   }
 
-  .forecast.Snow{
-    color: #fff;
+  .forecast.Clouds{
+    color: rgb(223, 213, 213);
   }
+
+
