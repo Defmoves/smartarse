@@ -5,16 +5,16 @@
   font-weight: 700;
   width: 100%;
   position: absolute;
-  bottom: 120px;
+  bottom: 130px;
 }
 
 .calendar svg{
-  font-size: 48px; 
+  font-size: 30px; 
 }
 
 .calendar-left{
   width: 397px;
-  font-size: 36px;
+  font-size: 30px;
   text-align: center;
   text-shadow: 0px 0px 1px #FFC107;  
   float:left;
@@ -22,7 +22,7 @@
 
 .calendar-right{
   width: 397px;
-  font-size: 16px;
+  font-size: 30px;
   text-align: center;
   float:right;
 }

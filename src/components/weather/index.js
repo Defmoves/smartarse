@@ -1,51 +1,49 @@
-import React, { Component } from 'react'
-import weather from 'openweather-apis'
+import React, { Component } from "react"
+import weather from "openweather-apis"
 import moment from "moment"
 import tz from "moment-timezone"
-import './Weather.css';
-
-var dateFormat = require('dateformat')
-var TiWeatherStormy = require('react-icons/lib/ti/weather-stormy')
-var TiWeatherShower = require('react-icons/lib/ti/weather-shower')
-var TiWeatherSnow = require('react-icons/lib/ti/weather-snow')
-var TiWeatherSunny = require('react-icons/lib/ti/weather-sunny')
-var TiWeatherCloudy = require('react-icons/lib/ti/weather-cloudy')
-var TiWeatherDownpour = require('react-icons/lib/ti/weather-downpour')
-
+import "./Weather.css"
+import {
+  FaCloud,
+  FaSun,
+  FaSnowflake,
+  FaUmbrella,
+  FaTint,
+  FaBolt
+} from "react-icons/fa"
 
 class App extends Component {
-
-  constructor(props){
+  constructor(props) {
     super(props)
-    weather.setLang('en')
-    weather.setCity('London,GB')
-    weather.setAPPID('02d71a10fa94fbcff9086087d8d9297e')
+    weather.setLang("en")
+    weather.setCity("London,GB")
+    weather.setAPPID("02d71a10fa94fbcff9086087d8d9297e")
     this.state = {
-      day0: <div/>,
-      day1: <div/>,
-      day2: <div/>,
-      day3: <div/>,
-      day4: <div/>,
-      day5: <div/>
+      day0: <div />,
+      day1: <div />,
+      day2: <div />,
+      day3: <div />,
+      day4: <div />,
+      day5: <div />
     }
   }
 
-  componentWillMount(){
+  componentWillMount() {
     this.getWeather()
   }
 
-  getWeather(){
+  getWeather() {
     let self = this
 
     let mo = new moment()
-    let day0 = mo.format('ddd')
-    let day1 = mo.add(1,'days').format('ddd')
-    let day2 = mo.add(1,'days').format('ddd')
-    let day3 = mo.add(1,'days').format('ddd')
-    let day4 = mo.add(1,'days').format('ddd')
-    let day5 = mo.add(1,'days').format('ddd')
+    let day0 = mo.format("ddd")
+    let day1 = mo.add(1, "days").format("ddd")
+    let day2 = mo.add(1, "days").format("ddd")
+    let day3 = mo.add(1, "days").format("ddd")
+    let day4 = mo.add(1, "days").format("ddd")
+    let day5 = mo.add(1, "days").format("ddd")
 
-    weather.getWeatherForecastForDays(6, function(err, obj){
+    weather.getWeatherForecastForDays(6, function(err, obj) {
       self.setState({
         day0: self.createForecast(obj.list[0], day0, 0),
         day1: self.createForecast(obj.list[1], day1, 1),
@@ -58,51 +56,53 @@ class App extends Component {
 
     setTimeout(() => {
       self.getWeather()
-    },3600000) // Once an Hour
+    }, 3600000) // Once an Hour
   }
 
-  createForecast(obj, day, index){
+  createForecast(obj, day, index) {
     var icon = {}
-    var iconClass = ''
-    let today = index === 0 ? 'today' : ''
+    var iconClass = ""
+    let today = index === 0 ? "today" : ""
 
-    switch(obj.weather[0].main){
-      case 'Thunderstorm':
-        icon = <TiWeatherStormy/>
-        iconClass  = 'Thunderstorm'
+    switch (obj.weather[0].main) {
+      case "Thunderstorm":
+        icon = <FaBolt />
+        iconClass = "Thunderstorm"
         break
-      case 'Rain':
-        icon = <TiWeatherDownpour/>
-        iconClass  = 'Rain'
+      case "Rain":
+        icon = <FaUmbrella />
+        iconClass = "Rain"
         break
-      case 'Drizzle':
-        icon = <TiWeatherShower/>
-        iconClass  = 'Drizzle'
+      case "Drizzle":
+        icon = <FaTint />
+        iconClass = "Drizzle"
         break
-      case 'Snow':
-        icon = <TiWeatherSnow/>
-        iconClass  = 'Snow'
+      case "Snow":
+        icon = <FaSnowflake />
+        iconClass = "Snow"
         break
-      case 'Clear':
-        icon = <TiWeatherSunny/>
-        iconClass  = 'Clear'
+      case "Clear":
+        icon = <FaSun />
+        iconClass = "Clear"
         break
-      case 'Clouds':
-        icon = <TiWeatherCloudy/>
-        iconClass  = 'Clouds'
+      case "Clouds":
+        icon = <FaCloud />
+        iconClass = "Clouds"
         break
     }
 
-    return (<div className={'forecast ' + today +  ' '  + iconClass}>
-              <div className={'icon '}>{icon}</div>
-              <p className='day'>{day}</p>
-              <p className='temp'>{Math.floor(obj.temp.max)} &#x2103;</p>
-            </div>)
+    return (
+      <div className={"forecast " + today + " " + iconClass}>
+        <div className={"icon "}>{icon}</div>
+        <p className="day">{day}</p>
+        <p className="temp">{Math.floor(obj.temp.max)} &#x2103;</p>
+      </div>
+    )
   }
 
   render() {
     return (
-      <div className="Weather">
+      <div className="weather">
         {this.state.day0}
         {this.state.day1}
         {this.state.day2}
@@ -110,8 +110,8 @@ class App extends Component {
         {this.state.day4}
         {this.state.day5}
       </div>
-    );
+    )
   }
 }
 
-export default App;
+export default App

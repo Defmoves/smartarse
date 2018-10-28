@@ -1,4 +1,4 @@
-.Weather{
+.weather{
   width: 100%;
   color:red;
   font-weight: 900;
@@ -11,7 +11,7 @@
 }
 
 
-.smartarse.night .Weather{
+.smartarse.night .weather{
   color:#8379f4;
 }
 

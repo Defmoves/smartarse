@@ -5,9 +5,9 @@ import Weather from "./weather/"
 import Calendar from "./calendar/"
 import "./App.css"
 
+import { FaSun } from "react-icons/fa"
+
 var dateFormat = require("dateformat")
-var MdTerrain = require("react-icons/lib/md/terrain")
-var MdWbSunny = require("react-icons/lib/md/wb-sunny")
 
 class App extends Component {
   constructor(props) {
@@ -29,7 +29,6 @@ class App extends Component {
     let style = "day"
 
     if (timeNumeric > 700 && timeNumeric < 2200) {
-      //if (true ){
       style = "day"
     } else {
       style = "night"

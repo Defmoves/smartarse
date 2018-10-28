@@ -30,16 +30,18 @@ html,body{
 
 h1.time{
   color:#388E3C;
-  font-size: 280px;
+  font-size: 210px;
   font-weight: 700;
   line-height: 100px;
   margin: 0 auto 0 auto;
   padding:0;
-  text-shadow: 0px 0px 10px #FFC107;
+  text-shadow: 0px 0px 5px #FFC107;
 }
 
-  .smartarse.night h1.time{
-    color: #ff3600;
+  .smartarse.night h1.time,
+  .smartarse.night .weather,
+  .smartarse.night .calendar{
+    opacity: 0.3;
   }
 
 h2.day{
