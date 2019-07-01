@@ -9,7 +9,7 @@ class App extends Component {
     return (
       <div className="calendar">
         <div className="calendar-left">
-          <FaGift /> B's Birthday <Moment fromNow>2019-06-30</Moment>
+          <FaGift /> Surprise <Moment fromNow>2019-07-24</Moment>
         </div>
         <div className="calendar-right">
           <FaGift /> J's Birthday <Moment fromNow>2019-11-23</Moment>

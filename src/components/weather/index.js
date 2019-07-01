@@ -4,13 +4,12 @@ import moment from "moment"
 import tz from "moment-timezone"
 import "./Weather.css"
 import {
-  FaCloud,
-  FaSun,
-  FaSnowflake,
-  FaUmbrella,
-  FaTint,
-  FaBolt
-} from "react-icons/fa"
+  WiDaySunny,
+  WiDayThunderstorm,
+  WiDayShowers,
+  WiSnow,
+  WiDayCloudy
+} from "react-icons/wi"
 
 class App extends Component {
   constructor(props) {
@@ -44,6 +43,7 @@ class App extends Component {
     let day5 = mo.add(1, "days").format("ddd")
 
     weather.getWeatherForecastForDays(6, function(err, obj) {
+      
       self.setState({
         day0: self.createForecast(obj.list[0], day0, 0),
         day1: self.createForecast(obj.list[1], day1, 1),
@@ -63,33 +63,35 @@ class App extends Component {
     var icon = {}
     var iconClass = ""
     let today = index === 0 ? "today" : ""
+    const id = obj.weather[0].id
 
-    switch (obj.weather[0].main) {
-      case "Thunderstorm":
-        icon = <FaBolt />
-        iconClass = "Thunderstorm"
-        break
-      case "Rain":
-        icon = <FaUmbrella />
-        iconClass = "Rain"
-        break
-      case "Drizzle":
-        icon = <FaTint />
-        iconClass = "Drizzle"
-        break
-      case "Snow":
-        icon = <FaSnowflake />
-        iconClass = "Snow"
-        break
-      case "Clear":
-        icon = <FaSun />
-        iconClass = "Clear"
-        break
-      case "Clouds":
-        icon = <FaCloud />
-        iconClass = "Clouds"
-        break
+    console.log(obj.weather[0])
+
+    if( id >= 200 && id < 300 ){
+      icon = <WiDayThunderstorm />
+      iconClass = "Thunderstorm"      
     }
+
+    if( id >= 500 && id < 600 ){
+      icon = <WiDayShowers />
+      iconClass = "Rain"    
+    }    
+
+    if( id >= 600 && id < 700 ){
+      icon = <WiSnow />
+      iconClass = "Snow"    
+    }       
+    
+    if( id === 800 ){
+      icon = <WiDaySunny />
+      iconClass = "Clear"    
+    }      
+    
+    if( id >= 801 && id < 900 ){
+      icon = <WiDayCloudy />
+      iconClass = "Clouds"    
+    }       
+
 
     return (
       <div className={"forecast " + today + " " + iconClass}>

@@ -24,7 +24,7 @@ class App extends Component {
     let day = dateFormat(date, "dS mmmm")
     let style = "day"
 
-    if (timeNumeric > 700 && timeNumeric < 2200) {
+    if (timeNumeric > 700 && timeNumeric < 2300) {
       style = "day"
     } else {
       style = "night"
