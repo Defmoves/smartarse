@@ -5,7 +5,7 @@ html,body{
 }
 
 .App{
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Yellowtail', cursive;
 }
 
 .smartarse {
@@ -20,20 +20,19 @@ html,body{
   width: 800px;
   height: 100px;
   position: absolute;
-  top: 80px;
+  top: 60px;
   left: 0px;
   padding: 30px 0 30px 0;
   text-align: center;
 }
 
 h1.time{
-  color:#388E3C;
-  font-size: 230px;
+  color:#ffa000;
+  font-size: 280px;
   font-weight: 700;
   line-height: 100px;
   margin: 0 auto 0 auto;
   padding:0;
-  text-shadow: 0px 0px 3px rgb(7, 255, 243);
 }
 
   .smartarse.night h1.time,

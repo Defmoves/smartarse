@@ -1,13 +1,14 @@
 .calendar{
   height: 40px;
-  padding: 10px 0 0px 0;
-  color:#388E3C;
-  font-size: 28px;  
-  font-weight: 400;
+  padding: 30px 0 0px 0;
+  color:#ff5722;
+  font-size: 38px;  
+  font-family: 'Amatic SC', cursive;
+  font-weight: 770;
   width: 100%;
   position: absolute;
   bottom: 130px;
-  text-shadow: 0px 0px 1px rgb(7, 255, 243);
+  text-shadow: 0px 0px 1px #ff5722;
 }
 
 .calendar svg{
@@ -15,9 +16,10 @@
 }
 
 .calendar-left{
-  width: 397px;
+  width: 357px;
   font-weight: 400;
   text-align: center;
+  margin-left: 40px;
   float:left;
 }
 
