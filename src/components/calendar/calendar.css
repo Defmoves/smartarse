@@ -12,7 +12,10 @@
 }
 
 .calendar svg{
-  font-size: 26px;
+  font-size: 40px;
+  padding-right: 10px;
+  position: relative;
+  top: 5px;  
 }
 
 .calendar-left{
@@ -29,3 +32,4 @@
   text-align: center; 
   float:right;
 }
+
