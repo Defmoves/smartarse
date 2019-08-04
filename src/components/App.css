@@ -27,8 +27,10 @@ html,body{
 }
 
 h1.time{
-  background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif);
-	background-size: cover;
+  background-image: url(https://media.giphy.com/media/8vIEv5JZmO1RRU0Wmz/giphy.gif);
+  background-size: cover;
+  background-position-x: 10px;
+  background-position-y: 600px;
 	color: transparent;
 	background-clip: text;
   font-size: 280px;
