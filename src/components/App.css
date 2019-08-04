@@ -20,17 +20,19 @@ html,body{
   width: 800px;
   height: 100px;
   position: absolute;
-  top: 60px;
+  top: -60px;
   left: 0px;
   padding: 30px 0 30px 0;
   text-align: center;
 }
 
 h1.time{
-  color:#ffa000;
+  background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif);
+	background-size: cover;
+	color: transparent;
+	background-clip: text;
   font-size: 280px;
   font-weight: 700;
-  line-height: 100px;
   margin: 0 auto 0 auto;
   padding:0;
 }
