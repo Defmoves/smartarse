@@ -27,7 +27,8 @@ html,body{
 }
 
 h1.time{
-  background-image: url(https://media.giphy.com/media/8vIEv5JZmO1RRU0Wmz/giphy.gif);
+  background-image: url(https://media.giphy.com/media/3og0IUT0S6LczLAgQU/giphy.gif);
+  text-shadow: 0 0 0.5em #ff5722;
   background-size: cover;
   background-position-x: 10px;
   background-position-y: 600px;
@@ -42,5 +43,5 @@ h1.time{
   .smartarse.night h1.time,
   .smartarse.night .weather,
   .smartarse.night .calendar{
-    opacity: 0.3;
+    opacity: .4;
   }
