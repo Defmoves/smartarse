@@ -9,11 +9,11 @@ class App extends Component {
     return (
       <div className="calendar">
         <div className="calendar-left">
-          <FaBirthdayCake /> Alma Bday <Moment fromNow>2019-09-16T21:37</Moment>
-          !
+          <FaBirthdayCake /> Alma was born&nbsp;
+          <Moment fromNow>2019-09-16T21:37</Moment>!
         </div>
         <div className="calendar-right">
-          <FaPlaneDeparture /> Asia <Moment fromNow>2019-11-19</Moment>
+          <FaPlaneDeparture /> 'Nam <Moment fromNow>2019-11-19</Moment>
         </div>
       </div>
     );
