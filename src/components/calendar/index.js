@@ -2,18 +2,27 @@ import React, { Component } from "react";
 import Moment from "react-moment";
 import "./calendar.css";
 
-import { FaPlaneDeparture, FaBirthdayCake } from "react-icons/fa";
+import { FaFilm, FaBook, FaFeatherAlt, FaGlobeEurope } from "react-icons/fa";
 
 class App extends Component {
   render() {
     return (
       <div className="calendar">
         <div className="calendar-left">
-          <FaBirthdayCake /> José bday&nbsp;
-          <Moment fromNow>2019-11-23T00:00</Moment>!
+          <FaFilm /> Brixton Ritzy&nbsp;
+          <Moment fromNow>2019-09-23T00:00</Moment>
         </div>
         <div className="calendar-right">
-          <FaPlaneDeparture /> 'nam <Moment fromNow>2019-11-19</Moment>
+          Uninhabitable <FaGlobeEurope />
+          <Moment fromNow>2019-10-02T00:00</Moment>
+        </div>
+        <div className="calendar-left">
+          <FaBook /> Naomi Klein&nbsp;
+          <Moment fromNow>2019-10-15T00:00</Moment>
+        </div>
+        <div className="calendar-right">
+          <FaFeatherAlt /> Neil Gaiman&nbsp;
+          <Moment fromNow>2019-11-14T00:00</Moment>
         </div>
       </div>
     );
