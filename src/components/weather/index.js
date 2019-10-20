@@ -1,7 +1,6 @@
 import React, { Component } from "react"
 import weather from "openweather-apis"
 import moment from "moment"
-import tz from "moment-timezone"
 import "./Weather.css"
 import {
   WiDaySunny,

@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Moment from "react-moment";
 import "./calendar.css";
 
-import { FaUmbrellaBeach, FaBook, FaFeatherAlt, FaGift } from "react-icons/fa";
+import { FaUmbrellaBeach, FaFeatherAlt, FaGift } from "react-icons/fa";
 
 class App extends Component {
   render() {
