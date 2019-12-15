@@ -18,7 +18,7 @@ class App extends Component {
 
   ticker() {
     let self = this
-    let date = new moment.tz("Europe/London")
+    let date = new Date
     let time = dateFormat(date, "HH:MM")
     let timeNumeric = dateFormat(date, "HHMM")
     let day = dateFormat(date, "dS mmmm")
