@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Moment from "react-moment";
 import "./calendar.css";
 
-import { FaGift, FaPlaneDeparture, FaBaby } from "react-icons/fa";
+import { FaPlaneDeparture, FaPlaneArrival, FaBaby } from "react-icons/fa";
 
 class App extends Component {
   render() {
@@ -13,7 +13,7 @@ class App extends Component {
           <Moment fromNow>2020-02-07T20:00</Moment>
         </div>
         <div className="calendar-left">
-          <FaPlaneDeparture /> Benny comes home&nbsp;
+          <FaPlaneArrival /> Benny comes home&nbsp;
           <Moment fromNow>2020-02-10T20:00</Moment>
         </div>
         <div className="calendar-left">
