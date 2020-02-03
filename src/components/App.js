@@ -1,44 +1,43 @@
-import React, { Component } from "react"
-import moment from "moment"
-import Weather from "./weather/"
-import Calendar from "./calendar/"
-import "./App.css"
-import dateFormat from "dateformat"
+import React, { Component } from "react";
+import Weather from "./weather/";
+import Calendar from "./calendar/";
+import "./App.css";
+import dateFormat from "dateformat";
 
 class App extends Component {
   constructor(props) {
-    super(props)
-    this.ticker = this.ticker.bind(this)
-    this.state = { style: "day" }
+    super(props);
+    this.ticker = this.ticker.bind(this);
+    this.state = { style: "day" };
   }
 
   componentWillMount() {
-    this.ticker()
+    this.ticker();
   }
 
   ticker() {
-    let self = this
-    let date = new Date
-    let time = dateFormat(date, "HH:MM")
-    let timeNumeric = dateFormat(date, "HHMM")
-    let day = dateFormat(date, "dS mmmm")
-    let style = "day"
+    let self = this;
+    let date = new Date();
+    let time = dateFormat(date, "HH:MM");
+    let timeNumeric = dateFormat(date, "HHMM");
+    let day = dateFormat(date, "dS mmmm");
+    let style = "day";
 
     if (timeNumeric > 700 && timeNumeric < 2300) {
-      style = "day"
+      style = "day";
     } else {
-      style = "night"
+      style = "night";
     }
 
     this.setState({
       time: time,
       day: day,
       style: style
-    })
+    });
 
     setTimeout(() => {
-      self.ticker()
-    }, 1000)
+      self.ticker();
+    }, 1000);
   }
 
   render() {
@@ -52,8 +51,8 @@ class App extends Component {
           <Calendar />
         </div>
       </div>
-    )
+    );
   }
 }
 
-export default App
+export default App;
