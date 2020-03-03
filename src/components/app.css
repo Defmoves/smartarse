@@ -1,0 +1,23 @@
+html,body{
+  overflow:hidden;
+  background-color: #fff;
+}
+
+.App{
+}
+
+.smartarse {
+  background-color: #000;
+  position: relative;
+  width: 800px;
+  height: 480px;
+  margin: 0 auto 0 auto;
+}
+
+
+
+  .smartarse.night h1.time,
+  .smartarse.night .weather,
+  .smartarse.night .calendar{
+    opacity: .2;
+  }

@@ -1,0 +1,29 @@
+.clock{
+    width: 800px;
+    height: 100px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    text-align: center;
+  }
+  
+  /*
+    https://hexeosis.tumblr.com/
+    https://pislices.ca/
+  
+  */
+  
+  .clock .time{
+    background-image: url(https://66.media.tumblr.com/1a94e5d40dc6b9758784a52987751886/810bc1ebc543b3e4-8d/s500x750/55d01d6290e1556be28a56a5dcd5058d6e071ba2.gifv); 
+    -webkit-text-stroke: 2px #fff;
+    background-position-x: -20px;
+    background-position-y: -230px;
+    background-size: 100% auto;
+    color: transparent;
+    background-clip: text;
+    font-family: 'Lilita One', cursive;
+    font-size: 310px;
+    font-weight: 400;
+    letter-spacing: 10px;
+    margin: 0 auto 0 auto;
+  }
