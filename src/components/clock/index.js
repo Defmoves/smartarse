@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./clock.css";
 import dateFormat from "dateformat";
 
@@ -9,11 +9,15 @@ const App = () => {
     let time = dateFormat(date, "HH:MM");
 
     setTime(time);
+
+    setTimeout(() => {
+      ticker();
+    }, 1000);
   };
 
-  setTimeout(() => {
+  useEffect(() => {
     ticker();
-  }, 1000);
+  }, [ticker]);
 
   return (
     <div className="clock">
