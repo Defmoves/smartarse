@@ -15,7 +15,7 @@
   
   .clock .time{
     background-image: url(https://66.media.tumblr.com/1a94e5d40dc6b9758784a52987751886/810bc1ebc543b3e4-8d/s500x750/55d01d6290e1556be28a56a5dcd5058d6e071ba2.gifv); 
-    -webkit-text-stroke: 2px #fff;
+    -webkit-text-stroke: 2px rgba(255, 255, 255, 0.849);
     background-position-x: -20px;
     background-position-y: -230px;
     background-size: 100% auto;
