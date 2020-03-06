@@ -9,7 +9,7 @@ const App = () => {
     <div className="calendar">
       <div className="calendar-left">
         <FaPlaneArrival /> Stinky arrives&nbsp;
-        <Moment fromNow>2020-03-12T14:00</Moment>
+        <Moment fromNow>2020-04-02T14:00</Moment>
       </div>
       <div className="calendar-right">
         <FaBaby /> Dinky Due&nbsp;
