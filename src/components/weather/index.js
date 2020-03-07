@@ -72,6 +72,10 @@ const App = () => {
       iconClass = "Clouds";
     }
 
+    setTimeout(() => {
+      getWeather();
+    }, 3600000); // Once an Hour    
+
     return (
       <div className={"forecast " + today + " " + iconClass}>
         <div className={"icon "}>{icon}</div>
@@ -80,10 +84,6 @@ const App = () => {
       </div>
     );
   };
-
-  setTimeout(() => {
-    getWeather();
-  }, 3600000); // Once an Hour
 
   useEffect(() => {
     getWeather();
