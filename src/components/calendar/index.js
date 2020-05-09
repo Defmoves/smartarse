@@ -8,8 +8,8 @@ const App = () => {
   return (
     <div className="calendar">
       <div className="calendar-center">
-        <FaBaby /> Tiny little Dinky Due&nbsp;
-        <Moment fromNow>2020-05-02T13:00</Moment>!
+        <FaBaby />Dinky arrived&nbsp;
+        <Moment fromNow>2020-05-04T10:40</Moment>!
       </div>
     </div>
   );
