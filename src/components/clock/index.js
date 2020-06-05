@@ -10,14 +10,11 @@ const App = () => {
 
     setTime(time);
 
-    setTimeout(() => {
-      ticker();
-    }, 1000);
   };
 
-  useEffect(() => {
+  setInterval(() => {
     ticker();
-  }, [ticker]);
+  }, 30000);
 
   return (
     <div className="clock">

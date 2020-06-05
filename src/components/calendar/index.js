@@ -1,6 +1,6 @@
 import React from "react";
-import Moment from "react-moment";
-import "./calendar.css";
+import { formatDistanceToNow } from 'date-fns'
+import "./calendar.css"
 
 import { FaBaby } from "react-icons/fa";
 
@@ -8,9 +8,8 @@ const App = () => {
   return (
     <div className="calendar">
       <div className="calendar-center">
-        <FaBaby />Dinky arrived&nbsp;
-        <Moment fromNow>2020-05-04T10:40</Moment>!
-      </div>
+        <FaBaby />Ethan arrived&nbsp;
+        {formatDistanceToNow(new Date(2020, 4, 4, 10, 40))} ago</div>
     </div>
   );
 };
