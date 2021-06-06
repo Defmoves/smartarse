@@ -14,10 +14,10 @@
   */
   
   .clock .time{
-    background-image: url(https://64.media.tumblr.com/ef68a1fbe349116f019fb3b7a9b51734/29f638db3d944615-b2/s500x750/7d50bff04d1fc2023bedbfb525dac50d5864e684.gifv); 
-    -webkit-text-stroke: 2px rgba(255, 255, 255, 0.1); 
+    background-image: url(https://64.media.tumblr.com/7d1f8ef37e529290ecaa8ec1e1dfcbc8/3d635a9f33267114-49/s500x750/13d6505a5923ba9a744f105d7237f564c41b3fdf.gifv); 
+    -webkit-text-stroke: 4px rgba(200, 200, 255, 0.2); 
     background-position-x: -0px;
-    background-position-y: -80px;
+    background-position-y: -00px;
     background-size: 100% auto;
     color: transparent;
     background-clip: text;
