@@ -7,12 +7,13 @@
   font-weight: 700;
   width: 100%;
   position: absolute;
-  bottom: 120px;
+  bottom: 150px;
+  opacity: .5;
 }
 
 .calendar svg{
   color:#e0e0e0;
-  font-size: 45px;
+  font-size: 35px;
   padding-right: 5px;
   position: relative;
   top: 5px;  
@@ -36,7 +37,7 @@
 
 .calendar-center{
   width: 600px;
-  font-weight: 400;
+  font-weight: 300;
   text-align: center;
   margin: 0px auto 0 auto;
 }
