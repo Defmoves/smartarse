@@ -9,7 +9,6 @@ const App = () => {
     let time = dateFormat(date, "HH:MM");
 
     setTime(time);
-
   };
 
   setInterval(() => {
