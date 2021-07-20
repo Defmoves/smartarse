@@ -9,10 +9,10 @@ const App = () => {
     <div className="calendar">
       <div className="calendar-center">
         <FaClinicMedical />José Vaccine in&nbsp;
-        {formatDistanceToNow(new Date(2021, 8, 14, 12, 0))}</div>
+        {formatDistanceToNow(new Date(2021, 6, 24, 12, 0))}</div>
         <div className="calendar-center">
         <FaClinicMedical />Benny Vaccine in&nbsp;
-        {formatDistanceToNow(new Date(2021, 8, 12, 12, 0))}</div>
+        {formatDistanceToNow(new Date(2021, 6, 25, 12, 0))}</div>
     </div>
   );
 };
