@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { addDays, format } from 'date-fns'
+import { addDays, format } from "date-fns";
 import weather from "openweather-apis";
 import "./Weather.css";
 import {
@@ -7,7 +7,7 @@ import {
   WiDayThunderstorm,
   WiDayShowers,
   WiSnow,
-  WiDayCloudy
+  WiDayCloudy,
 } from "react-icons/wi";
 
 const App = () => {
@@ -23,14 +23,14 @@ const App = () => {
   weather.setAPPID("02d71a10fa94fbcff9086087d8d9297e");
 
   const getWeather = () => {
-    let d0 = format(new Date(), "EEE")
-    let d1 = format(addDays(new Date(), 1), "EEE")
-    let d2 = format(addDays(new Date(), 2), "EEE")
-    let d3 = format(addDays(new Date(), 3), "EEE")
-    let d4 = format(addDays(new Date(), 4), "EEE")
-    let d5 = format(addDays(new Date(), 5), "EEE")
+    let d0 = format(new Date(), "EEE");
+    let d1 = format(addDays(new Date(), 1), "EEE");
+    let d2 = format(addDays(new Date(), 2), "EEE");
+    let d3 = format(addDays(new Date(), 3), "EEE");
+    let d4 = format(addDays(new Date(), 4), "EEE");
+    let d5 = format(addDays(new Date(), 5), "EEE");
 
-    weather.getWeatherForecastForDays(6, function(err, obj) {
+    weather.getWeatherForecastForDays(6, function (err, obj) {
       setDay0(createForecast(obj.list[0], d0, 0));
       setDay1(createForecast(obj.list[1], d1, 1));
       setDay2(createForecast(obj.list[2], d2, 2));
@@ -41,9 +41,7 @@ const App = () => {
 
     setTimeout(() => {
       getWeather();
-    }, 3600000); // Once an Hour  
-
-    
+    }, 3600000); // Once an Hour
   };
 
   const createForecast = (obj, day, index) => {
@@ -75,7 +73,7 @@ const App = () => {
     if (id >= 801 && id < 900) {
       icon = <WiDayCloudy />;
       iconClass = "Clouds";
-    }  
+    }
 
     return (
       <div className={"forecast " + today + " " + iconClass}>
@@ -86,9 +84,7 @@ const App = () => {
     );
   };
 
-  useEffect(() => {
-    getWeather();
-  }, []);
+  useEffect(() => getWeather(), []);
 
   return (
     <div className="weather">

@@ -1,15 +1,27 @@
-import React from "react";
-import { formatDistanceToNow } from 'date-fns'
-import "./calendar.css"
+import React, { useState, useEffect } from "react";
+import { formatDistanceToNow } from "date-fns";
+import "./calendar.css";
 
-import { FaWineBottle } from "react-icons/fa";
+import { FaPaperPlane } from "react-icons/fa";
 
 const App = () => {
+  const [date, setDate] = useState("?");
+  const ticker = () => {
+    const date = formatDistanceToNow(new Date("October 8, 2021"));
+    setDate(date);
+  };
+
+  setInterval(() => ticker(), 1800000); // every .5 hours
+
+  useEffect(() => ticker(), []);
+
   return (
     <div className="calendar">
       <div className="calendar-center">
-        <FaWineBottle />Sergio Coming in&nbsp;
-        {formatDistanceToNow(new Date("August 7, 2021"))}</div>
+        <FaPaperPlane />
+        We're off to Bologna in...&nbsp;
+        {date}!
+      </div>
     </div>
   );
 };

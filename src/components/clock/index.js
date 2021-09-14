@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./clock.css";
 import dateFormat from "dateformat";
 
@@ -13,7 +13,9 @@ const App = () => {
 
   setInterval(() => {
     ticker();
-  }, 30000);
+  }, 30000); // every 30 seconds
+
+  useEffect(() => ticker(), []);
 
   return (
     <div className="clock">
