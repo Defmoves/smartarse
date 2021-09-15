@@ -6,14 +6,15 @@ import { FaPaperPlane } from "react-icons/fa";
 
 const App = () => {
   const [date, setDate] = useState("?");
-  const ticker = () => {
-    const date = formatDistanceToNow(new Date("October 23, 2021"));
-    setDate(date);
-  };
 
-  setInterval(() => ticker(), 1800000); // every .5 hours
-
-  useEffect(() => ticker(), []);
+  useEffect(() => {
+    const ticker = () => {
+      const date = formatDistanceToNow(new Date("October 23, 2021"));
+      setDate(date);
+    };
+    setInterval(() => ticker(), 1800000); // every .5 hours
+    ticker();
+  }, []);
 
   return (
     <div className="calendar">

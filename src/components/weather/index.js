@@ -38,10 +38,6 @@ const App = () => {
       setDay4(createForecast(obj.list[4], d4, 4));
       setDay5(createForecast(obj.list[5], d5, 5));
     });
-
-    setTimeout(() => {
-      getWeather();
-    }, 3600000); // Once an Hour
   };
 
   const createForecast = (obj, day, index) => {
@@ -84,7 +80,10 @@ const App = () => {
     );
   };
 
-  useEffect(() => getWeather(), []);
+  useEffect(() => {
+    setInterval(() => getWeather(), 3600000); // Once an Hour
+    getWeather();
+  }, []);
 
   return (
     <div className="weather">

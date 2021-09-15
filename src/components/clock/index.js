@@ -4,18 +4,17 @@ import dateFormat from "dateformat";
 
 const App = () => {
   const [time, setTime] = useState("23:59");
-  const ticker = () => {
-    let date = new Date();
-    let time = dateFormat(date, "HH:MM");
 
-    setTime(time);
-  };
+  useEffect(() => {
+    const ticker = () => {
+      let date = new Date();
+      let time = dateFormat(date, "HH:MM");
+      setTime(time);
+    };
 
-  setInterval(() => {
+    setInterval(() => ticker(), 30000); // every 30 seconds
     ticker();
-  }, 30000); // every 30 seconds
-
-  useEffect(() => ticker(), []);
+  }, []);
 
   return (
     <div className="clock">
