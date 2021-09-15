@@ -10,7 +10,6 @@
     "dateformat": "^3.0.3",
     "openweather-apis": "^4.3.1",
     "react": "^16.13.1",
-    "react-background-noise": "0.1.6",
     "react-dom": "^16.13.1",
     "react-fontawesome": "^1.7.1",
     "react-icons": "^3.10.0"
