@@ -7,7 +7,7 @@ import { FaPaperPlane } from "react-icons/fa";
 const App = () => {
   const [date, setDate] = useState("?");
   const ticker = () => {
-    const date = formatDistanceToNow(new Date("October 8, 2021"));
+    const date = formatDistanceToNow(new Date("October 23, 2021"));
     setDate(date);
   };
 
