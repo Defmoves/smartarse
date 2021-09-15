@@ -1,30 +1,30 @@
-.clock{
-    width: 800px;
-    height: 100px;
-    position: absolute;
-    top: -20px;
-    left: 0px;
-    text-align: center;
-  }
-  
-  /*
+.clock {
+  width: 800px;
+  height: 100px;
+  position: absolute;
+  top: -20px;
+  left: 0px;
+  text-align: center;
+}
+
+/*
     https://hexeosis.tumblr.com/
     https://pislices.ca/
     https://dribbble.com/beesandbombs 
   
   */
-  
-  .clock .time{
-    background-image: url(https://media.wired.com/photos/593240d2a312645844993b25/master/w_1600,c_limit/stars.gif); 
-    -webkit-text-stroke: 6px rgba(210, 226, 205, 1); 
-    background-position-x: 0px;
-    background-position-y: -200px;
-    background-size: 100% auto;
-    color: transparent;
-    background-clip: text;
-    font-family: 'Lilita One', cursive;
-    font-size: 295px;
-    font-weight: 400;
-    letter-spacing: 0px;
-    margin: 0 auto 0 auto;
-  }
+
+.clock .time {
+  background-image: url(https://media.wired.com/photos/593240d2a312645844993b25/master/w_1600,c_limit/stars.gif);
+  -webkit-text-stroke: 6px rgb(185, 177, 177);
+  background-position-x: 0px;
+  background-position-y: -200px;
+  background-size: 100% auto;
+  color: transparent;
+  background-clip: text;
+  font-family: "Monoton", cursive;
+  font-size: 255px;
+  font-weight: 400;
+  letter-spacing: 0px;
+  margin: 0 auto 0 auto;
+}

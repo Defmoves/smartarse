@@ -8,7 +8,7 @@ const App = () => {
   useEffect(() => {
     const ticker = () => {
       let date = new Date();
-      let time = dateFormat(date, "HH:MM");
+      let time = dateFormat(date, "HH MM");
       setTime(time);
     };
 

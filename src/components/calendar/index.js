@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { formatDistanceToNow } from "date-fns";
 import "./calendar.css";
 
-import { FaPaperPlane } from "react-icons/fa";
+import { FaPlane } from "react-icons/fa";
 
 const App = () => {
   const [date, setDate] = useState("?");
@@ -19,7 +19,7 @@ const App = () => {
   return (
     <div className="calendar">
       <div className="calendar-center">
-        <FaPaperPlane />
+        <FaPlane />
         We're off to Bologna in...&nbsp;
         {date}!
       </div>

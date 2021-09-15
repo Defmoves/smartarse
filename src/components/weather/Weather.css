@@ -1,69 +1,66 @@
-.weather{
+.weather {
   width: 100%;
-  color:red;
+  color: red;
   font-weight: 900;
   position: absolute;
   font-size: 40px;
   line-height: 0px;
-  bottom:00px;
+  bottom: 00px;
   left: 00px;
   margin: 0 auto 0 auto;
 }
 
-
-.smartarse.night .weather{
-  color:#8379f4;
+.smartarse.night .weather {
+  color: #8379f4;
 }
 
-.forecast{
+.forecast {
   float: left;
-  color:;
-  color:#858585;
+  color: ;
+  color: #858585;
   width: 80px;
   padding: 10px 26px 0;
-  font-family: 'Yellowtail', cursive;
+  font-family: "Permanent Marker", cursive;
+  font-size: 10px;
 }
 
-  .forecast p{
-    float:left;
-    margin: 0;
-    font-size: 12px;
-    margin: 23px 0 0 1px;
-    text-align: left;
-  }
+.forecast p {
+  float: left;
+  margin: 0;
+  margin: 23px 0 0 1px;
+  text-align: left;
+}
 
-  .forecast p.temp{
-    margin: 15px 0 0 1px;
-  }
+.forecast p.temp {
+  margin: 15px 0 0 1px;
+}
 
-  .forecast .icon{
-    float:left;
-    font-size: 45px;
-    padding: 5px 0 15px 0;
-  }
+.forecast .icon {
+  float: left;
+  font-size: 45px;
+  padding: 5px 0 15px 0;
+}
 
-  .forecast.Thunderstorm{
-    color: rgb(255, 255, 255);
-  }
-  
-  .forecast.Rain{
-    color: #42a5f5;
-  }
-  
-  .forecast.Drizzle{
-    color: rgb(88, 114, 143);
-  }
-  
-  .forecast.Snow{
-    color: #fff;
-  }
+.forecast.Thunderstorm {
+  color: rgb(255, 255, 255);
+}
 
-  .forecast.Clear{
-    color: #f9a825;
-  }
+.forecast.Rain {
+  color: #42a5f5;
+}
 
-  .forecast.Clouds{
-    color: #fff59d;
-  }
+.forecast.Drizzle {
+  color: rgb(88, 114, 143);
+}
 
+.forecast.Snow {
+  color: #fff;
+}
 
+.forecast.Clear {
+  color: #f9a825;
+}
+
+.forecast.Clouds {
+  color: #fff59d;
+}
