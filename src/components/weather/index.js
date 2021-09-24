@@ -73,9 +73,9 @@ const App = () => {
 
     return (
       <div className={"forecast " + today + " " + iconClass}>
-        <div className={"icon "}>{icon}</div>
-        <p className="day">{day}</p>
-        <p className="temp">{Math.floor(obj.temp.max)} &#x2103;</p>
+        <span className={"icon "}>{icon}</span>
+        <span className="day">{day}</span> -
+        <span className="temp">{Math.floor(obj.temp.max)} &#x2103;</span>
       </div>
     );
   };

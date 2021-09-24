@@ -1,12 +1,13 @@
 .weather {
+  display: flex;
+  justify-content: space-evenly;
   width: 100%;
   color: red;
   font-weight: 900;
   position: absolute;
   font-size: 40px;
   line-height: 0px;
-  bottom: 00px;
-  left: 00px;
+  bottom: 30px;
   margin: 0 auto 0 auto;
 }
 
@@ -15,30 +16,26 @@
 }
 
 .forecast {
-  float: left;
-  color: ;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   color: #858585;
-  width: 80px;
-  padding: 10px 26px 0;
+  width: 200px;
   font-family: "Permanent Marker", cursive;
-  font-size: 10px;
+  font-size: 22px;
 }
 
 .forecast p {
-  float: left;
   margin: 0;
-  margin: 23px 0 0 1px;
   text-align: left;
 }
 
 .forecast p.temp {
-  margin: 15px 0 0 1px;
+  margin: 0 0 0 20px;
 }
 
 .forecast .icon {
-  float: left;
-  font-size: 45px;
-  padding: 5px 0 15px 0;
+  font-size: 65px;
 }
 
 .forecast.Thunderstorm {
