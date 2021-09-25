@@ -19,14 +19,12 @@
   background-image: url(https://media.wired.com/photos/593240d2a312645844993b25/master/w_1600,c_limit/stars.gif);
   */
   -webkit-text-stroke: 6px rgb(185, 177, 177);
+  color: transparent;
   background-position-x: 0px;
   background-position-y: -200px;
   background-size: 100% auto;
-  color: transparent;
   background-clip: text;
   font-family: "Monoton", cursive;
   font-size: 501px;
-  font-weight: 400;
-  letter-spacing: 0px;
   margin: 0 auto 0 auto;
 }
