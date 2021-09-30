@@ -9,7 +9,7 @@ const App = () => {
 
   useEffect(() => {
     const ticker = () => {
-      const date = formatDistanceToNow(new Date("October 23, 2021"));
+      const date = formatDistanceToNow(new Date("October 28, 2021"));
       setDate(date);
     };
     setInterval(() => ticker(), 1800000); // every .5 hours
