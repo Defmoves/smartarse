@@ -20,7 +20,7 @@ const App = () => {
     <div className="calendar">
       <div className="calendar-center">
         <FaBirthdayCake />
-        Tania's Birthday&nbsp;
+        Tania's Birthday in&nbsp;
         {date}!
       </div>
     </div>
