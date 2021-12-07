@@ -20,7 +20,7 @@ const App = () => {
     <div className="calendar">
       <div className="calendar-center">
         <FaTree />
-        Christmas in in&nbsp;
+        Christmas inss&nbsp;
         {date}!
       </div>
     </div>
