@@ -39,7 +39,7 @@
 }
 
 .forecast.Thunderstorm {
-  color: rgb(255, 255, 255);
+  color: rgb(0, 195, 255);
 }
 
 .forecast.Rain {
@@ -47,7 +47,7 @@
 }
 
 .forecast.Drizzle {
-  color: rgb(88, 114, 143);
+  color: rgb(150, 150, 150);
 }
 
 .forecast.Snow {
