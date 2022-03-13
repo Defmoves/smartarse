@@ -6,7 +6,6 @@ import ReactInputPosition, {
 import "./cursor.css";
 
 const Cursor = ({ active, x, y }) => {
-  console.log(x);
   const show = active ? "show" : "";
   const left = x - 200;
   const top = y - 200;
