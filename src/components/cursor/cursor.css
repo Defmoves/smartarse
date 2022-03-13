@@ -1,0 +1,21 @@
+.screen {
+  position: relative;
+  z-index: 10;
+  width: 1920px;
+  height: 1200px;
+}
+
+.capture {
+  position: relative;
+  z-index: 11;
+  width: 1920px;
+  height: 1200px;
+}
+
+.cursor {
+  display: none;
+}
+
+.show {
+  display: block;
+}
