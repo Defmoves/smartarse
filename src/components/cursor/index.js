@@ -12,9 +12,15 @@ const Cursor = ({ active, x, y }) => {
   const top = y - 200;
   return (
     <img
-      src="sing.png"
+      src="meena.gif"
       className={`cursor ${show}`}
-      style={{ position: "relative", left: `${left}px`, top: `${top}px` }}
+      style={{
+        position: "relative",
+        width: "400px",
+        height: "400px",
+        left: `${left}px`,
+        top: `${top}px`,
+      }}
     />
   );
 };
