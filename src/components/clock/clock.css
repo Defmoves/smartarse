@@ -15,16 +15,16 @@
   */
 
 .clock .time {
+  background-image: url(https://cdn.dribbble.com/users/583436/screenshots/2331946/media/f1f3258eef4898258615006e19db4e3b.gif);
   /*
-  background-image: url(https://media.wired.com/photos/593240d2a312645844993b25/master/w_1600,c_limit/stars.gif);
-  */
   -webkit-text-stroke: 6px rgb(185, 177, 177);
+  */
   color: transparent;
   background-position-x: 0px;
   background-position-y: -200px;
   background-size: 100% auto;
   background-clip: text;
-  font-family: "Monoton", cursive;
-  font-size: 501px;
+  font-family: "Bebas Neue", cursive;
+  font-size: 801px;
   margin: 0 auto 0 auto;
 }
