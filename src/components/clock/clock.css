@@ -28,3 +28,8 @@
   font-size: 801px;
   margin: 0 auto 0 auto;
 }
+
+.sleep .clock .time {
+  background-image: none;
+  color: #fff;
+}

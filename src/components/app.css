@@ -14,8 +14,8 @@ body {
   margin: 0 auto 0 auto;
 }
 
-.smartarse.night h1.time,
-.smartarse.night .weather,
-.smartarse.night .calendar {
+.App.sleep .clock,
+.App.sleep .weather,
+.App.sleep .calendar {
   opacity: 0.2;
 }

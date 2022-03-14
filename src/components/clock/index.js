@@ -2,13 +2,19 @@ import React, { useState, useEffect } from "react";
 import "./clock.css";
 import dateFormat from "dateformat";
 
-const App = () => {
+const App = ({ setSleep }) => {
   const [time, setTime] = useState("23:59");
 
   useEffect(() => {
     const ticker = () => {
-      let date = new Date();
-      let time = dateFormat(date, "HH MM");
+      const date = new Date();
+      const hour = Number(dateFormat(date, "HH"));
+      if (hour > 0 && hour < 8) {
+        setSleep(true);
+      } else {
+        setSleep(false);
+      }
+      const time = dateFormat(date, "HH MM");
       setTime(time);
     };
 
