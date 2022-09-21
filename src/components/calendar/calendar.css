@@ -4,7 +4,7 @@
   align-items: center;
   color: #fff;
   font-size: 54px;
-  font-family: "Permanent Marker", cursive;
+  font-family: "Nabla", cursive;
   width: 100%;
   position: absolute;
   bottom: 250px;
@@ -12,7 +12,7 @@
 }
 
 .calendar svg {
-  color: #de0858;
+  color: #fae100;
   font-size: 85px;
   position: relative;
   top: 25px;

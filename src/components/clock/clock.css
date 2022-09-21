@@ -15,14 +15,14 @@
   */
 
 .clock .time {
-  background-image: url(https://cdn.dribbble.com/users/583436/screenshots/2953529/media/4b78966d88f137b6b85682acac4ad4cb.gif);
+  background-image: url(https://cdn.dribbble.com/users/583436/screenshots/6934300/worm_dribbble.gif);
   /*
   -webkit-text-stroke: 6px rgb(185, 177, 177);
   */
   color: transparent;
-  background-position-x: 0px;
-  background-position-y: -200px;
-  background-size: 100% auto;
+  background-position-x: -100px;
+  background-position-y: -400px;
+  background-size: 120% auto;
   background-clip: text;
   font-family: "Bebas Neue", cursive;
   font-size: 801px;
