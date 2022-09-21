@@ -2,9 +2,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #fff;
+  color: rgb(255, 136, 0);
   font-size: 54px;
-  font-family: "Nabla", cursive;
+  /* Use "Nabla" when chrome on rPI >= 98" */
+  font-family: "Permanent Marker", cursive; 
   width: 100%;
   position: absolute;
   bottom: 250px;
