@@ -2,14 +2,14 @@ import React, { useState, useEffect } from "react";
 import { formatDistanceToNow } from "date-fns";
 import "./calendar.css";
 
-import { FaRegPaperPlane } from "react-icons/fa";
+import { FaGifts } from "react-icons/fa";
 
 const App = () => {
   const [date, setDate] = useState("?");
 
   useEffect(() => {
     const ticker = () => {
-      const date = formatDistanceToNow(new Date("October 13, 2022"));
+      const date = formatDistanceToNow(new Date("December 25, 2022"));
       setDate(date);
     };
     setInterval(() => ticker(), 1800000); // every .5 hours
@@ -19,8 +19,8 @@ const App = () => {
   return (
     <div className="calendar">
       <div className="calendar-center">
-        <FaRegPaperPlane />
-        Benny and the boy in Bologna in&nbsp;
+        <FaGifts />
+        Counrdown to Santa: &nbsp;
         {date}!
       </div>
     </div>
