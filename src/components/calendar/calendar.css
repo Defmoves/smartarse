@@ -5,7 +5,7 @@
   color: #F2616B;
   font-size: 54px;
   /* Use "Nabla" when chrome on rPI >= 98" */
-  font-family: "Permanent Marker", cursive; 
+  font-family: "Nabla", cursive; 
   width: 100%;
   position: absolute;
   bottom: 250px;
