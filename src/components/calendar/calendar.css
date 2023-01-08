@@ -4,6 +4,7 @@
   align-items: center;
   font-size: 54px;
   /* Use "Nabla" when chrome on rPI >= 98" */
+  color: #FAB363;
   font-family: "Nabla", cursive; 
   width: 100%;
   position: absolute;
