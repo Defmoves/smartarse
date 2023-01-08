@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  color: rgb(204, 34, 21);
+  color: #F2616B;
   font-size: 54px;
   /* Use "Nabla" when chrome on rPI >= 98" */
   font-family: "Permanent Marker", cursive; 
@@ -13,7 +13,7 @@
 }
 
 .calendar svg {
-  color: #fff;
+  color: #FAB363;
   font-size: 85px;
   position: relative;
   top: 25px;
