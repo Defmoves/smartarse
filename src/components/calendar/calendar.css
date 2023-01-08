@@ -2,7 +2,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #F2616B;
   font-size: 54px;
   /* Use "Nabla" when chrome on rPI >= 98" */
   font-family: "Nabla", cursive; 
