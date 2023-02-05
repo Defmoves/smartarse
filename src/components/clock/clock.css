@@ -15,14 +15,14 @@
   */
 
 .clock .time {
-  background-image: url(https://cdn.dribbble.com/users/583436/screenshots/1689314/media/4fdd3954ec94e19cf0d00cb82dabeabf.gif);
+  background-image: url(https://64.media.tumblr.com/fa5ee96452265567cd29a26bfa5cd012/48b11151c0f86caa-f9/s500x750/b66eb251e6f7c184d3c14d76a63db02586811360.gif);
   /*
   -webkit-text-stroke: 6px rgb(185, 177, 177);
   */
   color: transparent;
-  background-position-x: -120px;
+  background-position-x: -10px;
   background-position-y: -400px;
-  background-size: 115% auto;
+  background-size: 100% auto;
   background-clip: text;
   font-family: "Bebas Neue", cursive;
   font-size: 801px;
