@@ -15,13 +15,13 @@
   */
 
 .clock .time {
-  background-image: url(https://media4.giphy.com/media/S730OwIqw7iz8pdKRf/giphy.gif);
+  background-image: url(https://64.media.tumblr.com/fe9140515b5b845367989806467202b0/34d7f761d3b068ea-fd/s500x750/a4a5ab8644fe69782982ee315bee270239222a87.gif);
   /*
   -webkit-text-stroke: 6px rgb(185, 177, 177);
   */
   color: transparent;
-  background-position-x: -10px;
-  background-position-y: -400px;
+  background-position-x: 0;
+  background-position-y: -200px;
   background-size: 100% auto;
   background-clip: text;
   font-family: "Bebas Neue", cursive;

@@ -9,7 +9,7 @@ const App = () => {
 
   useEffect(() => {
     const ticker = () => {
-      const date = formatDistanceToNow(new Date("March 2, 2023"));
+      const date = formatDistanceToNow(new Date("March 31, 2023"));
       setDate(date);
     };
     setInterval(() => ticker(), 1800000); // every .5 hours
@@ -20,7 +20,7 @@ const App = () => {
     <div className="calendar">
       <div className="calendar-center">
         <RiSendPlaneFill />
-          Benny & Boy go Bologna in {date}!
+          Bologna in {date}!
       </div>
     </div>
   );
