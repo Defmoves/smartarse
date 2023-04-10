@@ -20,7 +20,7 @@ const App = () => {
     <div className="calendar">
       <div className="calendar-center">
         <RiCake2Line />
-          Ehan's birthday in {date}!
+          Ethan's birthday in {date}!
       </div>
     </div>
   );
