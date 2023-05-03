@@ -2,14 +2,14 @@ import React, { useState, useEffect } from "react";
 import { formatDistanceToNow } from "date-fns";
 import "./calendar.css";
 
-import { RiCake2Line } from "react-icons/ri";
+import { FaPlaneDeparture } from "react-icons/fa";
 
 const App = () => {
   const [date, setDate] = useState("?");
 
   useEffect(() => {
     const ticker = () => {
-      const date = formatDistanceToNow(new Date("May 1, 2023"));
+      const date = formatDistanceToNow(new Date("May 26, 2023"));
       setDate(date);
     };
     setInterval(() => ticker(), 1800000); // every .5 hours
@@ -19,8 +19,8 @@ const App = () => {
   return (
     <div className="calendar">
       <div className="calendar-center">
-        <RiCake2Line />
-          Ethan's birthday in {date}!
+        <FaPlaneDeparture />
+          Ethan & Benny in Bologna in {date}!
       </div>
     </div>
   );
