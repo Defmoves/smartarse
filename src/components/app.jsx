@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import Clock from "./clock/";
 import Weather from "./weather/";
 import Calendar from "./calendar/";
